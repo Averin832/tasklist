@@ -5,6 +5,12 @@
 
     <c:param name = "content">
 
+        <c:if test = "${flush } != null" >
+            <div id = "flush_success">
+                <c:out value = "${flush }" />
+            </div>
+        </c:if>
+
         <h2>タスク一覧</h2>
 
         <ul>
