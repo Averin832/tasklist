@@ -52,6 +52,12 @@ public class IndexServlet extends HttpServlet {
        request.setAttribute("tasks_count", tasks_count);
        request.setAttribute("page", page);
 
+           if (request.getSession().getAttribute("flush") != null) {
+
+               request.setAttribute("flush", request.getSession().getAttribute("flush"));
+               request.getSession().removeAttribute("flush");
+           }
+
        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/index.jsp");
        rd.forward(request, response);
 
