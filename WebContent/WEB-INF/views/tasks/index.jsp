@@ -5,7 +5,7 @@
 
     <c:param name = "content">
 
-        <c:if test = "${flush } != null" >
+        <c:if test = "${flush  != null}" >
             <div id = "flush_success">
                 <c:out value = "${flush }" />
             </div>

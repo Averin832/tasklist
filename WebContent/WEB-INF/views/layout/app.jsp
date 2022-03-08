@@ -11,8 +11,9 @@
     </head>
     <body>
         <div id = "wrapper">
+
             <div id = "header" >
-                <h1>課題リスト</h1>
+                <h1>課題リスト アプリケーション</h1>
             </div>
 
             <div id = "content" >

@@ -64,9 +64,10 @@ public class CreateServlet extends HttpServlet {
                     rd.forward(request, response);
 
             } else {
+
                 em.persist(t);
                 em.getTransaction().commit();
-                request.getSession().setAttribute("flush", "追加しました");
+                request.getSession().setAttribute("flush", "タスクを追加しました");
                 em.close();
 
                 response.sendRedirect(request.getContextPath() + "/index");

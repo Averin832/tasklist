@@ -62,6 +62,7 @@ public class UpdateServlet extends HttpServlet {
                     rd.forward(request, response);
 
                 }  else {
+
                     em.getTransaction().begin();
                     em.getTransaction().commit();
                     request.getSession().setAttribute("flush", "更新が完了しました");

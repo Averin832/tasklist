@@ -50,7 +50,7 @@ table, tr, th, td {
 }
 
 table {
-    width : 100%
+    width : 100%;
     table-layout : fixed;
 }
 
@@ -73,7 +73,7 @@ button {
     text-align : center;
 }
 
-#flush {
+#flush_success {
     width : 100%;
     padding-top : 28px;
     padding-left : 2%;
@@ -83,8 +83,8 @@ button {
     background-color : #d4edda;
 }
 
-#flush_success {
-    width : 100%
+#flush_error {
+    width : 100%;
     padding-top : 28px;
     padding-left : 2%;
     padding-bottom : 28px;
